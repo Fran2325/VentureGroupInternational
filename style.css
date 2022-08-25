@@ -1,0 +1,281 @@
+:root{
+    --color1:#FFFFFF;
+    --color2:black 0.1em 0.1em 0.2em; /*sombra */
+    --color3:#0e0e0e;
+    --color4:#0b6bb99f;
+    --color5:#ff0;
+    --color6:#c0c0c0;
+    --color7:#337ab7;
+    --color8:#23527c;
+    --color9:#3c763d;    
+    --color10:#2b542c;
+    --color11:#31708f;
+    --color12:#245269;
+    --color13:#8a6d3b;
+    --color14:#66512c;  
+    --color15:#a94442;
+    --color16:#843534;
+    --color17:#fff;
+    --color18:#dff0d8;
+    --color19:#c1e2b3;
+    --color20:#d9edf7;
+    --color21:#afd9ee;
+    --color22:#fcf8e3;
+    --color23:#f2dede;
+    --color24:#c7254e;
+    --color25:#f9f2f4;
+    --color26:rgba(51, 51, 51, 0.696);
+    --color27:#ccc;
+    --color28:transparent;
+    --color29:#777;
+    --color30:#ddd;
+    --color31:#66afe9;
+    --color32:rgba(102, 175, 233, .6);
+    --color33:#67b168;
+    --color34:#ce8483;
+    --color35:#2e6da4;
+    --color36:#204d74;
+    --color37:#5cb85c;
+    --color38:#4cae4c;
+    --color39:#449d44;
+    --color40:#398439;
+    --color41:#5bc0de;
+    --color42:#46b8da;
+    --color43:#31b0d5;
+    --color44:#269abc;
+    --color45:#f0ad4e;
+    --color46:#ec971f;
+    --color47:#eea236;
+    --color49:#d58512;
+    --color50:#d9534f;
+    --color51:#d43f3a;
+    --color52:#c9302c;
+    --color53:#ac2925;
+    --color54:#337ab7;
+    --color55:#286090;
+    --color56:#2b542c;
+    --color57:#bce8f1;
+    --color59:#a6e1ec;
+    --color60:#245269;
+    --color62:#5cb85c;
+    --color63:#31708f;
+    --colorBg:darkblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+html, body{
+    font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background:var(--color1);
+	margin: 0;
+    height: 150vh;
+}
+p,ul li,ol li{
+	margin:0;
+	font-size:14px;
+	letter-spacing: 1px;
+	color:var(--color14);
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+	margin:0;
+} 
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover{
+	text-decoration:none;
+}
+.contenedor{/*menu pegajoso*/
+    width: 100%;
+    height: 80px;
+    background: var(--color4);
+    padding: 0 5rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    z-index: 99999;
+}
+.contenedor2 {
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.contenedorNav{
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+    height: 78px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+img, svg {
+    vertical-align: middle;
+}
+
+.logo {
+    margin: 0 1.5rem;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 70px;
+    margin: 90%;
+    padding: 0px;
+    margin: 0 1.5rem;
+    text-decoration: none;
+}
+
+.item-options {
+    color: #f1f1f1;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin: 0 1.5rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0a58ca;
+}
+nav{
+    margin: 4em;
+} 
+.carrusel{
+        width: 100%;
+        max-width:120em;
+        padding:0;
+        background-color: var(--color1);
+        overflow: hidden;
+
+
+    }
+    .grande{
+        width: 200%;
+        background-color: var(--color1);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        transition: all 5s ease;
+        transform: translateX(0%);
+        overflow: hidden;
+    }
+    .img1,.img2{
+        width: 100%;
+        height: 500px;
+        min-height: 10vh;
+        background-color: var(--color1);
+    }
+    .puntos{
+    width: 100%;
+    margin: 2em 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .punto{
+        width: 1em;
+        height: 1em;
+        background-color: var(--color1);
+        margin: 1em 1em 0 ;
+        border-radius: 1em;
+        background-color: var(--blanco);
+        box-shadow: 0.6em 0.6em 1.2em;
+    }
+
+    .carrousel .punto.activo {
+        background-color: lightblue;
+    }
+
+#menuHamburguesa,#menuCheck{
+    display: none;
+}
+
+@media only screen and (max-width:900px){
+    header.contenedor{
+        width: 100%;
+        height: 80px;
+        padding: 0;
+    }
+    header.contenedor nav{
+        width: 100%;
+        height: 70px;
+        padding: 0;
+    }
+}    
+
+@media only screen and (max-width:700px){
+    header.contenedor{
+        width: 100%;
+        height: 80px;
+    }
+    header.contenedor nav{
+        padding-top:50px;
+        width: 100%;
+        height: 70px;
+        display: inline;
+    }
+    #menuCheck:not(:checked)~nav{
+        display: none;
+    }
+    #menuCheck:checked~nav{
+        width: 100%;
+        display: block;
+    }
+    #menuHamburguesa{
+        
+        display: block;
+        color: var(--color5);
+        background-color: var(--color28);
+        font-size: 1.2em;
+        font-weight: bold;
+        position: absolute;
+        right:1em;
+        top: 1em;
+        z-index: 9999;
+
+    }
+    #menuHamburguesa:hover{
+        color: var(--color1);
+        background-color: var(--color5);
+    }
+    #menuCerrar{
+        display: none;
+    }
+
+    #menuCheck:checked~label #menuAbrir{
+        display: none;
+    }
+
+    #menuCheck:checked~label #menuCerrar{
+        display: block;
+    }
+
+    header.contenedor nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 250%;
+        background: var(--color26);
+        margin: 0;
+        display: block;
+        text-align: right;
+        display: flex;
+        justify-content: end;
+        align-items: flex-end;
+    }
+    header.contenedor nav{
+        display: block;
+        text-align: right;
+    }
+
+}
