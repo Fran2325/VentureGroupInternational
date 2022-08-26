@@ -148,15 +148,14 @@ nav{
 } 
 .carrusel{
         width: 100%;
-        max-width:120em;
         padding:0;
         background-color: var(--color1);
         overflow: hidden;
 
-
     }
     .grande{
         width: 200%;
+        height: 500px;
         background-color: var(--color1);
         display: flex;
         flex-flow: row nowrap;
@@ -165,12 +164,12 @@ nav{
         padding: 0;
         transition: all 5s ease;
         transform: translateX(0%);
-        overflow: hidden;
     }
     .img1,.img2{
         width: 100%;
-        height: 500px;
+        height: 600px;
         min-height: 10vh;
+        margin-top: 1em;
         background-color: var(--color1);
     }
     .puntos{
@@ -276,6 +275,9 @@ nav{
     header.contenedor nav{
         display: block;
         text-align: right;
+    }
+    .img1{
+        width:683px;
     }
 
 }
