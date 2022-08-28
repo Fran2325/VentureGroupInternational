@@ -1,6 +1,6 @@
 :root{
     --color1:#FFFFFF;
-    --color2:black 0.1em 0.1em 0.2em; /*sombra */
+    --color2:black; /*sombra */
     --color3:#0e0e0e;
     --color4:#0b6bb99f;
     --color5:#ff0;
@@ -217,6 +217,33 @@ nav{
     justify-content: center;
     align-items: center;
 } 
+.queHacemos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+}
+.queHacemos .grid{
+    display: grid;
+    /* background: var(--color6); */
+    grid-template-columns: 22% 40% 40%;
+}
+.queHacemos .grid:hover{
+    border: 3px solid var(--color5);
+    box-shadow: 10px 5px 5px var(--color2);
+}
+.gridImg{
+    /* background: var(--color53); */
+    grid-row: 1/3;
+}
+.gridTitulo{
+    /* background: var(--color34); */
+    grid-column: 2/4;
+}
+.gridTexto{
+    /* background: var(--color56); */
+    grid-column: 2/4; 
+}
+
 
 #menuHamburguesa,#menuCheck{
     display: none;
