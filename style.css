@@ -225,7 +225,7 @@ nav{
 .queHacemos .grid{
     display: grid;
     /* background: var(--color6); */
-    grid-template-columns: 22% 40% 40%;
+    grid-template-columns: 20% 40% 40%;
 }
 .queHacemos .grid:hover{
     border: 3px solid var(--color5);
@@ -243,7 +243,61 @@ nav{
     /* background: var(--color56); */
     grid-column: 2/4; 
 }
+.grid h2{
+    font-size:1em;
+    margin: 0.5em 0 0.5em;
+}
 
+.propiedades{
+    display: grid;
+    padding: 2em;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+/* .propiedades .propiedadesGrid{
+    display: grid;
+    background: var(--color6);
+    grid-row: 1/5;
+} */
+
+.propiedadesGrid1{
+    grid-column: 1/5;
+    align-self: center;
+    justify-self: center;
+}
+.propiedadesGrid2{
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+.propiedadesGrid3{
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+.propiedadesGrid4{
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+.propiedades .titulo{
+
+}
+.propiedades .img{
+
+}
+.propiedades .etiquetaAzul{
+
+}
+.propiedades .subtitulo{
+
+}
+.propiedades .direccion{
+
+}
+.propiedades .boton{
+
+}
 
 #menuHamburguesa,#menuCheck{
     display: none;
