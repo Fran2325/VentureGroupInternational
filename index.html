@@ -1,52 +1,55 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./imagenes/1.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagenes/favicon.ico" type="image/x-icon">
     <title>Venture Group International</title>
-    <link rel="stylesheet" type="text/css"  href="style.css">
+    <link rel="stylesheet" type="text/css"  href="./style.css">
+    <!-- Bootstrap -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 </head>
 <body>
     <header class="contenedor">
-        <div class="contenedor2">
-            <figure class="logo">
-                <img src="imagenes/logo cabecera .png" alt="Logo">
-            </figure>
-            <input type="checkbox" id="menuCheck">
-            <label id="menuHamburguesa" for="menuCheck">
-                <span id="menuAbrir">&#9776;</span>
-                <span id="menuCerrar">x</span>
-            </label>
-            <nav class="contenedorNav">
-                <ul><a href="#" class="item-options">nosotros</a></ul>
-                <ul><a href="#" class="item-options">vender</a></ul>
-                <ul><a href="#" class="item-options">contratista</a></ul>
-                <ul><a href="#" class="item-options">inversionistas</a></ul>
-                <ul><a href="#" class="item-options">agentes</a></ul>
-                <ul><a href="#" class="item-options">contáctanos</a></ul>    
-            </nav>
-        </div>
+        <figure class="logo">
+            <img src="imagenes/logo cabecera .png" alt="Logo">
+        </figure>
+        <input type="checkbox" id="menuCheck">
+        <label id="menuHamburguesa" for="menuCheck">
+            <span id="menuAbrir">&#9776;</span>
+            <span id="menuCerrar">x</span>
+        </label>
+        <nav>
+            <a href="#" class="item-options">nosotros</a>
+            <a href="#" class="item-options">vender casa</a>
+            <a href="#" class="item-options">contratista</a>
+            <a href="#" class="item-options">inversionistas</a>
+            <a href="#" class="item-options">agentes</a>
+            <a href="#" class="item-options">contáctanos</a>
+        </nav>
     </header>
-        <div class="carrusel">
-            <div class="grande">
-                <img src="imagenes/casa1.jpg" alt="Imagen 1" class="img1">
-                <img src="imagenes/casa2.jpg" alt="Imagen 2" class="img2">
-            </div>
-            <ul class="puntos">
-                <li class="punto activo"></li>
-                <li class="punto"></li>
-            </ul>
-            <hgroup class="FijoEnElFinalDelCarrucel">
-                <p class="item-options">¡Encuentra tu nuevo hogar con nosotros!</p>
-            </hgroup>
+    <!-- ________________________________________________________________ -->
+    <!-- Carrusel principal -->
+    <div class="carrusel">
+        <div class="grande">
+            <img src="imagenes/casa1.jpg" alt="Imagen 1" class="img1">
+            <img src="imagenes/casa2.jpg" alt="Imagen 2" class="img2">
         </div>
-        <div>
-            <hgroup class="FijoEnElFinalDelCarrucel1">
-            <p class="item-options">¡Encuentra tu nuevo hogar con nosotros!</p>
-        </hgroup>   
-        </div>
+        <ul class="puntos">
+            <li class="punto activo"></li>
+            <li class="punto"></li>
+        </ul>
+        <hgroup class="NoseQuePasaAqui">
+        </hgroup>
+    </div>
+    <div>
+        <hgroup class="FijoEnElFinalDelCarrucel">
+        <p class="item-options">¡Encuentra tu nuevo hogar con nosotros!</p>
+    </hgroup>   
+    </div>
+    <!-- ________________________________________________________________ -->
+        <!-- ¿Que hacemos? -->
         <section class="queHacemos">
             <div class="grid">
                 <div class="gridImg">
@@ -82,6 +85,8 @@
                 </div>
             </div>
         </section>
+        <!-- ________________________________________________________________ -->
+        <!-- Informacion de propiedades -->
         <section class="propiedades">
                 <div class="propiedadesGrid1">
                     <div class="titulo">
@@ -140,44 +145,174 @@
                 </div>
             </div>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
-        <footer class="footer">
-            <ol class="olFooter">
-            <figure class="logoFooter">
-                <img src="imagenes/logo cabecera .png" alt="Logo">
-            </figure>
-            </ol>
-                <div>
-                <h2>Explore</h2>
-                <ol><a href="#" class="item-options">nosotros</a></ol>
-                <ol><a href="#" class="item-options">vender casa</a></ol>
-                <ol><a href="#" class="item-options">contratista</a></ol>
-                <ol><a href="#" class="item-options">inversionistas</a></ol>
-                <ol><a href="#" class="item-options">agentes</a></ol>
-                <ol><a href="#" class="item-options">contáctanos</a></ol>
+    <!-- ________________________________________________________________ -->
+<!-- Ejecutivos -->
+        <section class="ejecutivos">
+            <div class="ejecutivosTitulo">
+                <h2>Nuetros Agentes</h2>
             </div>
+            <div class="ejecutivosGrid1">
+                <img src="./imagenes/team1.jpg" alt="Foto Ejecutivo" class="fotoEjecutivo">
+                <p class="nombreEjecutivo"> ROSY PAUL</p>
+                <button class="btn-cssbuttons">
+                    <span>CONTACTO</span><span>
+                    </span>
+                    <ul>
+                    <li>
+                        <a href="#" target="_blank"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                        <path fill="white" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                        <path fill="white" d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"/></svg></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                        <path fill="white" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+                    </li>
+                </ul>
+            </button>
+            </div>
+            <div class="ejecutivosGrid2">
+                <img src="./imagenes/team2.jpg" alt="Foto Ejecutivo" class="fotoEjecutivo">
+                <p class="nombreEjecutivo">LUIS JAIMES</p>
+                <button class="btn-cssbuttons">
+                    <span>CONTACTO</span><span>
+                    </span>
+                    <ul>
+                    <li>
+                        <a href="#" target="_blank"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                        <path fill="white" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                        <path fill="white" d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"/></svg></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                        <path fill="white" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+                    </li>
+                </ul>
+            </button>
+            </div>
+            <div class="ejecutivosGrid3">
+                <img src="./imagenes/team3.jpg" alt="Foto Ejecutivo" class="fotoEjecutivo">
+                <p class="nombreEjecutivo">FRENCH CARL</p>
+                <button class="btn-cssbuttons">
+                    <span>CONTACTO</span><span>
+                    </span>
+                    <ul>
+                    <li>
+                        <a href="#" target="_blank"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                        <path fill="white" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                        <path fill="white" d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"/></svg></a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                        <path fill="white" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+                    </li>
+                </ul>
+            </button>
+            </div>
+            <div class="ejecutivosGrid4">
+                <img src="./imagenes/team4.jpg" alt="Foto Ejecutivo" class="fotoEjecutivo">
+                <p class="nombreEjecutivo">PETER WILLIAMSON</p>
+                    <button class="btn-cssbuttons">
+                        <span>CONTACTO</span><span>
+                        </span>
+                        <ul>
+                        <li>
+                            <a href="#"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="white" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+                        </li>
+                        <li>
+                            <a href="#"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="white" d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"/></svg></a>
+                        </li>
+                        <li>
+                            <a href="#"><svg height="30px" width="30px" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024" class="icon">
+                            <path fill="white" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
+                        </li>
+                    </ul>
+                </button>
+            </div>
+        </section>
+        <!-- ________________________________________________________________ -->
+        <!-- Carrucel Testimonios -->
+        <div class="testimoniocarrousel">
+            <div class="testimonioGridtitulo">
+                <div class="titulo">
+                <h2 class="tituloH2">Testimonios de nuestros Clientes</h2>
+                </div>
+            </div>
+            <div class="testimoniogrande">
+                <div class="testimonio1Grid">
+                    <div class="testimonioGrid1">
+                        <img src="./imagenes/t1.jpg" alt="Foto Ejecutivo" class="fotoEjecutivo">
+                    </div>
+                    <div class="testimonioGrid2">
+                        <h2>Harry Potter dice:</h2>
+                    </div>
+                    <div class="testimonioGrid3">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum cupiditate dolor hic nihil, fugiat cum. Provident nobis laborum aut delectus in cupiditate optio! Optio ullam commodi excepturi earum libero.</h2>
+                    </div>
+                </div>
+                <div class="testimonio2Grid">
+                    <div class="testimonioGrid1">
+                        <img src="./imagenes/t2.jpg" alt="Foto Ejecutivo" class="fotoEjecutivo">
+                    </div>
+                    <div class="testimonioGrid2">
+                        <h2>Peter Petigroup dice:</h2>
+                    </div>
+                    <div class="testimonioGrid3">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum cupiditate dolor hic nihil, fugiat cum. Provident nobis laborum aut delectus in cupiditate optio! Optio ullam commodi excepturi earum libero.</h2>
+                    </div>
+                </div>
+            </div>
+            <ul class="testimoniopuntos">
+                <li class="testimoniopunto testimonioactivo"></li>
+                <li class="testimoniopunto"></li>
+            </ul>
+        </div>
+<!-- -------------------------------------------------------------------------------------
+Footer -->
+    <footer class="footer">
+        <ol class="olFooter">
+        <figure class="logoFooter">
+            <img src="imagenes/logo cabecera .png" alt="Logo">
+        </figure>
+        </ol>
             <div>
-                <h2>Contáctanos</h2>
-                <ol><a href="https://goo.gl/maps/bAqCwuNLaqDJpbGf8" target="_blank" class="item-options">Wilmington, NC</a></ol>
-                <ol><a href="tel:909-743-8460" target="_blank" class="item-options">909-743-8460</a></ol>
-                <ol><a href="mailto:info.venturegroupintl@gmail.com" target="_blank" class="item-options">info.venturegroupintl@gmail.com</a></ol>
-                <ol><a href="#" class="item-options"></a></ol>
-                <ol><a href="#" class="item-options"></a></ol>
-                <ol><a href="#" class="item-options"></a></ol>
-            </div>
-            <div>
-                <h2>Siguenos</h2>
-                <ol><a href="https://www.facebook.com/venturegroupint/" target="_blank" class="facebook"><img src="imagenes/squared_facebook_icon_217729.png" alt="facebook"></a></ol>
-                <ol><a href="#" class="item-options"></a></ol>
-                <ol><a href="#" class="item-options"></a></ol>
-                <ol><a href="#" class="item-options"></a></ol>
-                <ol><a href="#" class="item-options"></a></ol>
-                <ol><a href="#" class="item-options"></a></ol>
-            </div>
-        </footer>
-    </main>
+            <h2>Explore</h2>
+            <ol><a href="#" class="item-options">nosotros</a></ol>
+            <ol><a href="#" class="item-options">vender casa</a></ol>
+            <ol><a href="#" class="item-options">contratista</a></ol>
+            <ol><a href="#" class="item-options">inversionistas</a></ol>
+            <ol><a href="#" class="item-options">agentes</a></ol>
+            <ol><a href="#" class="item-options">contáctanos</a></ol>
+        </div>
+        <div class="divFooter">
+            <h2>Contáctanos</h2>
+            <ol><a href="https://goo.gl/maps/bAqCwuNLaqDJpbGf8" target="_blank" class="item-options">Wilmington, NC</a></ol>
+            <ol><a href="tel:909-743-8460" target="_blank" class="item-options">909-743-8460</a></ol>
+            <ol><a href="mailto:info.venturegroupintl@gmail.com" target="_blank" class="item-options">info.venturegroupintl@gmail.com</a></ol>
+            <ol><a href="#" class="item-options"></a></ol>
+            <ol><a href="#" class="item-options"></a></ol>
+            <ol><a href="#" class="item-options"></a></ol>
+        </div>
+        <div class="divFooter">
+            <h2>Siguenos</h2>
+            <ol><a href="https://www.facebook.com/venturegroupint/" target="_blank" class="facebook"><img src="imagenes/squared_facebook_icon_217729.png" alt="facebook"></a></ol>
+            <ol><a href="#" class="item-options"></a></ol>
+            <ol><a href="#" class="item-options"></a></ol>
+            <ol><a href="#" class="item-options"></a></ol>
+            <ol><a href="#" class="item-options"></a></ol>
+            <ol><a href="#" class="item-options"></a></ol>
+        </div>
+    </footer>
     <script defer src="app.js" ></script>
 </body>
 </html>
